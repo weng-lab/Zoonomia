@@ -12,8 +12,11 @@ scriptDir=$2
 cd ${workDir}
 
 non_ubi_PLS_file=$3
-# from "Fan, K., Moore, J. E., Zhang, X. O., & Weng, Z. (2021). Genetic and epigenetic features of promoters with ubiquitous chromatin accessibility support ubiquitous transcription of cell-essential genes. Nucleic acids research, 49(10), 5705-5725."
-# download from PLS with ubi-/non-ubi- label from supplementary
+# list of non-ubi-PLSs
+# File from: Fan, K., Moore, J. E., Zhang, X. O., & Weng, Z. (2021). 
+# Genetic and epigenetic features of promoters with ubiquitous chromatin accessibility support ubiquitous transcription of cell-essential genes.
+# Nucleic acids research, 49(10), 5705-5725."
+
 phyloP_signal=$4
 GENCODE_TSS=$5
 

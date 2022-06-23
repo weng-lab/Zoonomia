@@ -64,5 +64,5 @@ done < ${species_list}
 
 
 #------------------
-Rscript ${scriptDir}UMAP_across_speceis.R GRCh38-ccREs_alignment_matrix.txt
-Rscrip ${scriptDir}make_cCRE_heatscatter_240Species.R GRCh38-cCRE_alignment_count.txt GRCh38-random_alignment_count.txt
+# Rscript ${scriptDir}UMAP_across_speceis.R GRCh38-ccREs_alignment_matrix.txt
+# Rscrip ${scriptDir}Generate_cCRE_heatscatter_240Species.R GRCh38-cCRE_alignment_count.txt GRCh38-random_alignment_count.txt

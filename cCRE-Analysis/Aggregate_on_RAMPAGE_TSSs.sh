@@ -8,8 +8,11 @@
 # This script is for aggregating phyloP scores on RAMPAGE rPeaks.
 
 RAMPAGE_rPeak=$1
-# from "Moore, J. E., Zhang, X. O., Elhajjajy, S. I., Fan, K., Pratt, H. E., Reese, F., ... & Weng, Z. (2022). Integration of high-resolution promoter profiling assays reveals novel, cell type–specific transcription start sites across 115 human cell and tissue types. Genome Research, 32(2), 389-402."
+# File from: Moore, J. E., Zhang, X. O., Elhajjajy, S. I., Fan, K., Pratt, H. E., Reese, F., ... & Weng, Z. (2022).
+# Integration of high-resolution promoter profiling assays reveals novel, cell type–specific transcription start sites across 115 human cell and tissue types.
+# Genome Research, 32(2), 389-402."
 # rPeaks from supplementary files, only use TSS peaks
+
 signal=$2 #phyloP or π
 output_matrix=$3
 
@@ -20,7 +23,9 @@ awk '{FS=OFS="\t"}{if(($3-$2)>9 && $6=="+"){print $0}}' ${RAMPAGE_rPeak} > broad
 
 
 # 2. calculate phyloP signal
-n=500 # total number of bins
+n=500
+# total number of bins
+
 for peak_type in narrow broad
 do
     ## cut rPeak-summit±250bp into 1bp bins
